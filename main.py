@@ -18,3 +18,20 @@ print("os elementos nas posições pares da lista são: ")
 for i in range (0,len(lista),2):
 
     print(lista[i])
+
+continua = 's'
+
+lista = []
+
+while (continua == 's' or continua == 'S'):
+    n = float(input("Digite um número: "))
+    lista.append(n)
+    continua = input("Deseja continuar? (s/n):")
+
+print("A ista com os elemeentos digitados é ",lista)
+
+soma = 0 
+for i in range(len(lista)):
+    soma += lista[i]
+
+print("A soma dos elementos da lista é:",soma)
